@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-black: #080706;
+  --color-black2: #0f0e0b;
+  --color-card: #111008;
+  --color-gold: #c9a84c;
+  --color-gold2: #e8cb7a;
+  --color-gold-dim: rgba(201, 168, 76, 0.12);
+  --color-border: rgba(201, 168, 76, 0.18);
+  --color-border2: rgba(201, 168, 76, 0.38);
+  --color-text: #f0ead8;
+  --color-text2: #b8a88a;
+  --color-text3: #7a6e5c;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --breakpoint-m: 860px;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black text-text overflow-x-hidden;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+  }
+}
+
+@keyframes scroll-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@utility playfair {
+  font-family: var(--font-playfair);
+}
+
+.scrl-line {
+  position: relative;
+  overflow: hidden;
+  width: 56px;
+  height: 1px;
+  background: var(--color-text3);
+}
+
+.scrl-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-gold);
+  animation: scroll-line 2s ease-in-out infinite;
+}
