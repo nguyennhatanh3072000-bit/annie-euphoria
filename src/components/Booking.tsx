@@ -6,7 +6,6 @@ const FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLScKTpuKmy7IeDF6DWUC2oIrNLwICEDOCFixswMGJ6PRHMrw7g/viewform?usp=publish-editor'
 const INSTAGRAM = 'https://www.instagram.com/annienniaa/'
 const FACEBOOK = 'https://www.facebook.com/nhatanh.3007/'
-const TEL = 'tel:0917294152'
 
 export function Booking({ t }: { t: TranslationCopy }) {
   return (
@@ -60,12 +59,6 @@ export function Booking({ t }: { t: TranslationCopy }) {
                 rel="noreferrer"
               >
                 💬 Facebook · Magic Shop
-              </a>
-              <a
-                className="border-border text-text3 border px-6 py-3.5 text-center text-[12px] tracking-[2px] uppercase no-underline transition-all duration-300 hover:border-border2 hover:text-gold"
-                href={TEL}
-              >
-                📞 0917 294 152
               </a>
             </div>
           </div>

@@ -3,7 +3,6 @@ import { HtmlBlock } from './HtmlBlock'
 
 const INSTAGRAM = 'https://www.instagram.com/annienniaa/'
 const FACEBOOK = 'https://www.facebook.com/nhatanh.3007/'
-const TEL = 'tel:0917294152'
 
 export function Footer({ t }: { t: TranslationCopy }) {
   return (
@@ -63,12 +62,6 @@ export function Footer({ t }: { t: TranslationCopy }) {
             rel="noreferrer"
           >
             Facebook · Magic Shop
-          </a>
-          <a
-            className="text-text2 text-sm no-underline transition-colors duration-300 hover:text-gold"
-            href={TEL}
-          >
-            📞 0917 294 152
           </a>
         </div>
       </div>

@@ -9,6 +9,7 @@ import { Nav } from './components/Nav'
 import { Reviews } from './components/Reviews'
 import { Services } from './components/Services'
 
+type Theme = 'dark' | 'light'
 type ServiceTab = 'tarot' | 'tea'
 
 function SectionRule() {
@@ -19,6 +20,7 @@ function SectionRule() {
 
 export default function App() {
   const [lang, setLang] = useState<Lang>('vi')
+  const [theme, setTheme] = useState<Theme>('dark')
   const [serviceTab, setServiceTab] = useState<ServiceTab>('tarot')
   const t = translations[lang]
 
@@ -26,10 +28,14 @@ export default function App() {
     document.documentElement.lang = lang
   }, [lang])
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
+
   return (
     <>
       <DecorativeLayers />
-      <Nav lang={lang} onLang={setLang} t={t} />
+      <Nav lang={lang} onLang={setLang} theme={theme} onTheme={setTheme} t={t} />
       <Hero t={t} />
       <SectionRule />
       <About t={t} />

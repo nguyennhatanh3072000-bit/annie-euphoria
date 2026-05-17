@@ -27,8 +27,12 @@ export type TranslationCopy = {
   tl3: [string, string, string]
   revEy: string
   revTitle: string
+  revCustomer: string
+  rev1text: string
   rev1svc: string
+  rev2text: string
   rev2svc: string
+  rev3text: string
   bookEy: string
   bookLead: string
   bookNoteTitle: string
@@ -106,8 +110,12 @@ export const translations: Record<Lang, TranslationCopy> = {
     ],
     revEy: 'Reviews · Phản hồi',
     revTitle: 'Khách hàng<br><em>nói gì.</em>',
+    revCustomer: 'Khách hàng',
+    rev1text: '"Rất nhiệt tình, 10 điểm 5 sao, quan trọng là xem rất chuẩn. Rất iu người e reader này."',
     rev1svc: 'Tarot · 5 câu hỏi',
+    rev2text: '"Sau 6 tháng nữa mọi thứ vẫn còn khá trần trụi c lại nhắn e nhé. Em làm rất chi tiết lắm ý. C rất cảm ơn vì em xem cho c rất có tâm hihi."',
     rev2svc: 'Bài Trà · 6 tháng',
+    rev3text: '"Sốp 10điểm đi lúc nào cx có."',
     bookEy: 'Booking · Đặt lịch',
     bookLead:
       'Nhấn nút bên dưới để điền form đặt lịch — mình sẽ xác nhận qua email trong vòng 2 tiếng.',
@@ -116,7 +124,7 @@ export const translations: Record<Lang, TranslationCopy> = {
       'Các dịch vụ đều thực hiện <strong>100% online</strong>, trả lời qua <strong>voice note hoặc text</strong>.<br>Thanh toán sau khi xác nhận lịch qua chuyển khoản.<br>Thời gian xử lý: <strong>trong ngày hoặc 1-2 ngày</strong> tùy lịch.',
     bookBtn: 'Điền form đặt lịch ✦',
     bookHint:
-      'Hoặc liên hệ trực tiếp qua Instagram / Facebook / điện thoại nếu bạn có câu hỏi trước khi đặt 🌙',
+      'Hoặc liên hệ trực tiếp qua Instagram / Facebook nếu bạn có câu hỏi trước khi đặt 🌙',
     ftBook: 'Đặt lịch',
     ftSub:
       'Annie Reading Room · @byannie<br>Tarot · Tea Leaf · Feng Shui Crystals<br>Since 2015 · Online · Toàn quốc',
@@ -186,8 +194,12 @@ export const translations: Record<Lang, TranslationCopy> = {
     ],
     revEy: 'Reviews',
     revTitle: 'What clients<br><em>say.</em>',
+    revCustomer: 'Client',
+    rev1text: '"So enthusiastic — 10/10, 5 stars. And most importantly, incredibly accurate. Absolutely love this reader."',
     rev1svc: 'Tarot · 5 Questions',
+    rev2text: '"In 6 months when things are still a bit raw, message me again. You were incredibly detailed. I\'m so grateful — you read for me with such care hihi."',
     rev2svc: 'Tea Leaf · 6 Months',
+    rev3text: '"Shop is 10/10, always delivers."',
     bookEy: 'Booking',
     bookLead:
       "Click the button below to fill out the booking form — I'll confirm via email within 2 hours.",
@@ -196,7 +208,7 @@ export const translations: Record<Lang, TranslationCopy> = {
       'All services are <strong>100% online</strong>, answered via <strong>voice note or text</strong>.<br>Payment by bank transfer after booking confirmation.<br>Processing time: <strong>same day or 1-2 days</strong> depending on schedule.',
     bookBtn: 'Fill Out Booking Form ✦',
     bookHint:
-      'Or contact directly via Instagram / Facebook / phone if you have questions before booking 🌙',
+      'Or contact directly via Instagram / Facebook if you have questions before booking 🌙',
     ftBook: 'Booking',
     ftSub:
       'Annie Reading Room · @byannie<br>Tarot · Tea Leaf · Feng Shui Crystals<br>Since 2015 · Online · Nationwide',
