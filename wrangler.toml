@@ -1,2 +1,5 @@
+# Cloudflare Pages — https://byannietarrot.pages.dev
+# `name` is the Pages project id (subdomain: {name}.pages.dev).
+# `pages_build_output_dir` must be set so `wrangler pages deploy` uses this file.
 name = "byannietarrot"
 pages_build_output_dir = "dist"
